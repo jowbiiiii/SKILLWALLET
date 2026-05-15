@@ -1,0 +1,93 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background: #555;
+}
+
+nav ul li {
+  text-align: center;
+  padding: 0.8rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main */
+main {
+  padding: 1rem;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Cards */
+.card {
+  background: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  body {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  body {
+    font-size: 1.2rem;
+  }
+}
